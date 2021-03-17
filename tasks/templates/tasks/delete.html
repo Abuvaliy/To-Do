@@ -1,0 +1,11 @@
+<p>Are you sure yuo want delete "{{item}}"</p>
+
+<a href="{% url 'list'%}">Canel</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Confirm">
+</form>
+
+
+<!--#csrf_token bekent bilan frontentni bog'laydigan kalit so'z-->
